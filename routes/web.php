@@ -17,10 +17,22 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get("/greet", function () {
-    return "Hello World";
-});
-
 Route::get("/login", function () {
     return view("/login");
-});
+})->name("masuk");
+
+Route::get("/register", function () {
+    return view("/register");
+})->name("daftar");
+
+Route::get("/guest", function () {
+    return view("/guest");
+})->name("tamu");
+
+Route::get("/about-me", function () {
+    return view("/about-me");
+})->name("tentang-saya");
+
+Route::get("/home", function () {
+    return view("/home");
+})->name("beranda");
