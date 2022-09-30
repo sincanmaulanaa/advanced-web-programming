@@ -10,7 +10,8 @@
 
 <body>
     @include("components.nav")
-    <h1>Ini halaman beranda.</h1>
+    <h1>Selamat datang <?= $nama ?>.</h1>
+    <h2 style="text-align: center;">Waktu: <?= $waktu ?></h2>
 </body>
 
 </html>
