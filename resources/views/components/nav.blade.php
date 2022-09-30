@@ -17,7 +17,7 @@
 
 
 <nav>
-    <a href="<?= route("beranda") ?>">Home</a>
+    <a href="<?= route("beranda", $nama) ?>">Home</a>
     <a href="<?= route("daftar") ?>">Daftar</a>
     <a href="<?= route("masuk") ?>">Masuk</a>
     <a href="<?= route("tamu") ?>">Tamu</a>
