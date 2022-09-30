@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\TestingController;
 
 /*
 |--------------------------------------------------------------------------
@@ -33,6 +34,4 @@ Route::get("/about-me", function () {
     return view("/about-me");
 })->name("tentang-saya");
 
-Route::get("/home", function () {
-    return view("/home");
-})->name("beranda");
+Route::get("/home/{nama}", [TestingController::class, "home"])->name("beranda");
